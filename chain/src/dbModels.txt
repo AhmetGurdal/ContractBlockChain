@@ -1,0 +1,49 @@
+"""
+    DB
+        - User
+            - id
+            - type
+            - social security number
+            - noter_id
+            - firstname
+            - lastname
+            - phone
+            - email
+            - password
+            - private_key
+            - public_key
+            - last_login_at
+            - created_at
+
+        - Block
+            - index
+            - timestamp
+            - data
+            - proof
+            - prev_hash
+        
+        - Doc_User
+            - id
+            - doc_id
+            - user_id
+            - is_verified
+
+        - Doc
+            - id
+            - title
+            - loc
+            - hash
+            - status = "user_verify" , "notery_verify", "verified", "rejected", "waiting"
+            - invalid_messagea
+            - doc_user_id_list
+            - remaning_user_list
+            - created_by
+            - created_at
+            - updated_at
+
+        - Notification
+            - id
+            - user_id
+            - doc_id
+            - is_seen
+"""
